@@ -2,21 +2,21 @@
 <nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/90 backdrop-blur-lg border-b border-white/5">
   <div class="flex justify-between items-center px-6 md:px-10 py-4 max-w-full mx-auto">
     <div (click)="scrollTo('home')" class="cursor-pointer select-none group flex items-center gap-4">
-      <div class="w-64 h-18 rounded-xl overflow-hidden shadow-[0_0_24px_rgba(253,242,75,0.25)] group-hover:shadow-[0_0_36px_rgba(253,242,75,0.45)] transition-all duration-300 flex items-center justify-center bg-[#fdf24b]">
-        <img src="BITONIK-%20MARCA%20PRINCIPAL%20(1).png" alt="Bitonik Logo" class="w-full h-full object-cover object-center" />
+      <div class="w-52 h-14 rounded-full overflow-hidden shadow-[0_0_24px_rgba(253,242,75,0.25)] group-hover:shadow-[0_0_36px_rgba(253,242,75,0.45)] transition-all duration-300 flex items-center justify-center bg-[#fdf24b]">
+        <img src="BITONIK-%20MARCA%20PRINCIPAL%20(1).png" alt="Bitonik Logo" class="w-full h-full object-cover object-center scale-[1.35]" />
       </div>
     </div>
     <div class="hidden md:flex gap-8 items-center">
-      <a (click)="scrollTo('features')" [class.text-primary]="activeSection() === 'features'" [class.text-gray-400]="activeSection() !== 'features'" class="font-medium hover:text-white transition-all duration-300 cursor-pointer font-headline tracking-tight">Entrenamientos</a>
-      <a (click)="scrollTo('features')" class="text-gray-400 font-medium hover:text-white transition-all duration-300 cursor-pointer font-headline tracking-tight">Entrenadores</a>
-      <a (click)="scrollTo('plans')" [class.text-primary]="activeSection() === 'plans'" [class.text-gray-400]="activeSection() !== 'plans'" class="font-medium hover:text-white transition-all duration-300 cursor-pointer font-headline tracking-tight">Planes</a>
-      <a (click)="openProfileModal()" class="text-gray-400 font-medium hover:text-white transition-all duration-300 cursor-pointer font-headline tracking-tight">Comunidad</a>
+      <a (click)="scrollTo('features')" [class.text-primary]="activeSection() === 'features'" [class.text-gray-400]="activeSection() !== 'features'" class="font-bold text-sm uppercase tracking-wider hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer font-headline">Entrenamientos</a>
+      <a (click)="scrollTo('features')" class="text-gray-400 font-bold text-sm uppercase tracking-wider hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer font-headline">Entrenadores</a>
+      <a (click)="scrollTo('plans')" [class.text-primary]="activeSection() === 'plans'" [class.text-gray-400]="activeSection() !== 'plans'" class="font-bold text-sm uppercase tracking-wider hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer font-headline">Planes</a>
+      <a (click)="openProfileModal()" class="text-gray-400 font-bold text-sm uppercase tracking-wider hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer font-headline">Comunidad</a>
     </div>
     <div class="flex items-center gap-4">
       <button (click)="openProfileModal()" class="hidden md:flex items-center justify-center p-2 rounded-full border border-outline-variant text-on-surface hover:text-primary hover:border-primary transition-all">
         <span class="material-symbols-outlined">person</span>
       </button>
-      <button (click)="openJoinModal()" class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold transition-all duration-300 hover:opacity-80 scale-95 active:scale-90 font-headline">Unirme</button>
+      <button (click)="openJoinModal()" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold uppercase text-xs tracking-wider transition-all duration-300 hover:scale-105 active:scale-95 font-headline">Unirme</button>
     </div>
   </div>
 </nav>
